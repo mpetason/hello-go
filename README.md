@@ -2,7 +2,7 @@
 
 In this guide we are going to create a basic Go application that will serve "Hello World" over http. We are going to deploy the application to the Digital Ocean App Platform using our Github repository as the source. After deployment we will verify that the application is running and then proceed to cleanup.
 
-### Setup Github Repository
+## Setup Github Repository
 
 We need a github repository that we can use to deploy the application. Let's name it "hello-go", for example:
 
@@ -29,7 +29,7 @@ Set the remote for the repository so that updates can be pushed to Github. Make 
 git remote add origin git@github.com:USERNAME/hello-go.git
 ```
 
-### Create Go Application
+## Create Go Application
 
 Start out by creating a main.go file that will contain our Go application. We'll use vi to open a file and create it. You can use any text editor you are comfortable with.
 
@@ -69,11 +69,25 @@ For Example:
 go mod init mpetason/hello-go
 ```
 
-### Create App Platform app
+At this point there will be two files in your local folder: `main.go` and `go.mod`
+
+The files need to be added to the remote Github repository so that the App Platform can use them for deployment. 
+
+```bash
+git add -A
+git commit -m 'Added my project'
+git push -u -f origin master
+```
+
+## Create App Platform app
 
 Create App 
 
-Select Github
+![launch_app](./images/1_launch_app.png)
+
+Select Github - Install Digital Ocean in your user space
+
+
 
 Authorize Github
 
@@ -85,4 +99,7 @@ Name the site
 
 Select Starter > Launch Starter App
 
-### Cleanup
+
+curl https://hello-go-7kpgj.ondigitalocean.app/
+
+## Cleanup
