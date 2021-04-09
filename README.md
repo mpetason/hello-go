@@ -81,25 +81,29 @@ git push -u -f origin master
 
 ## Create App Platform app
 
-Create App 
+Now it is time to create the application. Start out by selecting Apps under Manage in the DigitalOcean UI. 
+
+![apps](./images/0_apps.png)
+
+Select Launch Your App. This will take us to the application setup. After we've created an application we'll see an overview of Apps here.
 
 ![launch_app](./images/1_launch_app.png)
 
-Select Github - Install Digital Ocean in your user space
+For this guide we're going to be using Github. Select Github and proceed to authorization for DigitalOcean.
 
 ![choose_source](./images/2_choose_source.png)
 
-Authorize Github
+Here we'll install and authorize DigitalOcean so that it can access our Github repository. We're going to grant access to a specific repository, the one we configured, on the second page of authorization.
 
 ![github_auth](./images/3_github_auth.png)
 
 ![github_repos](./images/4_github_repos.png)
 
-Choose Repository and branch
+Once we have setup permissions we can now select the repository that we configured as well as the branch. For this guide we'll use the main branch. We'll leave autodeploy code changes in case you want to do further testing before cleanup.
 
 ![choose_source_2](./images/5_choose_source_2.png)
 
-App Setup
+
 
 ![app_setup](./images/6_app_setup.png)
 
