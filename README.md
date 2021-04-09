@@ -87,19 +87,47 @@ Create App
 
 Select Github - Install Digital Ocean in your user space
 
-
+![choose_source](./images/2_choose_source.png)
 
 Authorize Github
 
+![github_auth](./images/3_github_auth.png)
+
+![github_repos](./images/4_github_repos.png)
+
 Choose Repository and branch
 
-Type - Website (don't add database)
+![choose_source_2](./images/5_choose_source_2.png)
+
+App Setup
+
+![app_setup](./images/6_app_setup.png)
 
 Name the site
 
+![app_name](./images/7_app_name.png)
+
 Select Starter > Launch Starter App
 
+![finalize](./images/8_finalize.png)
 
-curl https://hello-go-7kpgj.ondigitalocean.app/
+Success!
+
+![success](./images/9_success.png)
+
+![site](./images/10_site.png)
+
+We can also curl
+
+```bash
+$ curl https://hello-go-7kpgj.ondigitalocean.app/
+Hello World!
+```
 
 ## Cleanup
+
+![settings](./images/11_settings.png)
+
+![destroy](./images/12_destroy.png)
+
+![destroyed](./images/13_destroyed.png)
