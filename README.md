@@ -1,4 +1,4 @@
-# Digital Ocean App Platform Guide
+# DigitalOcean App Platform Guide
 
 In this guide we are going to create a basic Go application that will serve "Hello World" over http. We are going to deploy the application to the Digital Ocean App Platform using our Github repository as the source. After deployment we will verify that the application is running and then proceed to cleanup.
 
